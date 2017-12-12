@@ -1,4 +1,5 @@
 .name {
     color: red;
-    background: url('./img/test.png')
+    background: url('./img/test.png');
+    font-size: .20rem;
 }
