@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    {{!-- 统一使用七牛云公共CDN(https://www.staticfile.org/) --}}
+    <script src="http://cdn.staticfile.org/zepto/1.2.0/zepto.min.js"></script>
+  </head>
+  <body>
+      <h1 class="name">这里是服务器环境头部</h1>
+      <div id="modsWrap">
+      </div>
+      <h1 class="name">这里是服务器环境底部</h1>
+  </body>
+</html>
