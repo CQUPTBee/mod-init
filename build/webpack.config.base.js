@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
@@ -16,38 +15,6 @@ module.exports = {
     filename: '[name].bundle.js',
     path: BASEPATH + '/src/build'
   },
-  plugins: [
-    // new NpmInstallPlugin(),
-    new CleanWebpackPlugin(
-      ['build'],
-      {
-        root: BASEPATH + '/src',
-      }
-    ),
-    new HtmlWebpackPlugin({
-      title: '本地模拟服务器环境',
-      template: './src/defaultServer/mods.hbs'
-    }),
-    new CopyWebpackPlugin([
-      {
-          from: './src/index.hbs',
-          to:'./'
-      },
-      {
-          from: './src/data/data.json',
-          to:'./'
-      },
-      {
-          from: './src/data/jsonschema.json',
-          to:'./'
-      },
-      {
-          from: './src/helpers',
-          to:'./helpers'
-      },
-    ]),
-    new OpenBrowserPlugin({ url: 'http://localhost:8888' })
-  ],
   module: {
     rules: [
       {
