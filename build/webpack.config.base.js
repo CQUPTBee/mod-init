@@ -1,7 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
-const NpmInstallPlugin = require('npm-install-webpack-plugin');
+
 const path = require('path')
 const BASEPATH = path.resolve(__dirname, '..')
 
@@ -56,14 +53,7 @@ module.exports = {
             name: 'img/[hash:8].[name].[ext]'
           }
         }
-      },
-      
+      },   
     ]
-  },
-  devServer: {
-    port: 8888,
-    contentBase: "../src",//本地服务器所加载的页面所在的目录
-    historyApiFallback: true,//不跳转
-    inline: true//实时刷新
-  } 
+  }
 };
