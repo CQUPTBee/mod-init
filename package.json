@@ -1,7 +1,7 @@
 {
   "name": "magicmods",
   "version": "1.0.0",
-  "description": "",
+  "description": "initModule",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
@@ -30,8 +30,10 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
+    "vab-zepto": "^1.0.0",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0"

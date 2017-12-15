@@ -4,8 +4,6 @@ const path = require('path');
 const BASEPATH = path.resolve(__dirname, '..');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const merge = require('webpack-merge')
-
-
 const baseConfig = require('./webpack.config.base');
 
 const config = _.clone(baseConfig);
