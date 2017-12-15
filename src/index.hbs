@@ -1,2 +1,12 @@
-<h1 class="name">{{name}}</h1>
-<h1 class="name">{{test name}}</h1>
+<div class="mod-banner">
+    <ul class="banner-wrap">
+        {{#each bannerList}}
+            <li class="banner-list">
+                <a href="{{this.href}}" class="banner-list-herf">
+                    <img src="{{this.imgUrl}}" alt="" class="banner-img">
+                    <h3 class="banner-title">{{test this.title}}</h3>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</div>
