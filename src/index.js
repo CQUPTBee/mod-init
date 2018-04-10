@@ -1,9 +1,15 @@
 import './index.less';
 import Main from './main.js';
 import Img from './img/test.png';
-import $ from 'vab-zepto';
 
-$('.name').eq(0).html('test')
-new Main()
-
-
+export default class Index {
+  constructor ($box) {
+    // $box.html('123');
+  }
+  componentDid () {
+    new Main()
+  }
+  componentWillUnmount() {
+    console.log('销毁')
+  }
+}
