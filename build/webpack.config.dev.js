@@ -2,7 +2,7 @@ const _ = require('lodash');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
-const merge = require('webpack-merge')
+const merge = require('webpack-merge');
 
 
 const baseConfig = require('./webpack.config.base');
