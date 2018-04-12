@@ -1,6 +1,7 @@
 import Tpl from '../index.hbs';
 import Data from '../data/data.json';
 import ModuleData from '../../package.json';
+import Mod from '../index.js'
 import './index.scss';
 
 let moduleName = ModuleData.description;
@@ -11,4 +12,16 @@ let nowTemplate = `
         ${originTemplate}
     </li>
 `
-document.getElementById('modsWrap').innerHTML = nowTemplate;
+let $dom = $(nowTemplate)
+$('#modsWrap').append($dom[0])
+let ModObject = new Mod($dom)
+
+ModObject.componentDid()
+
+$('#drag').click(() => {
+  ModObject.componentDrag()
+})
+
+
+
+
