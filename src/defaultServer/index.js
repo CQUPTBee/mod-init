@@ -16,10 +16,10 @@ let $dom = $(nowTemplate)
 $('#modsWrap').append($dom)
 let ModObject = new Mod($dom)
 
-ModObject.componentDid()
+ModObject.componentDid($dom)
 
 $('#drag').click(() => {
-  ModObject.componentDrag()
+  ModObject.componentDrag($dom)
 })
 
 
