@@ -13,7 +13,7 @@ let nowTemplate = `
     </li>
 `
 let $dom = $(nowTemplate)
-$('#modsWrap').append($dom[0])
+$('#modsWrap').append($dom)
 let ModObject = new Mod($dom)
 
 ModObject.componentDid()
