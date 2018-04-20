@@ -6,7 +6,7 @@ export default class Index {
   constructor ($box) {
     // $box.html('123');
   }
-  componentDid () {
+  componentDid ($box) {
     new Main()
   }
   componentWillUnmount() {

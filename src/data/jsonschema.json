@@ -1,38 +1,11 @@
 {
-  "title": "Carousel-module",
+  "title": "Mod-init",
   "type": "object",
-  "description": "热图插件",
+  "description": "初始模块名",
   "properties": {
-    "config": {
-      "type": "object",
-      "title": "轮播属性设置",
-      "desc": "轮播的各种属性",
-      "val": "",
-      "properties": {
-        "speed": {
-          "type": "number",
-          "title": "轮播速度",
-          "minimum": "100",
-          "val": "1000",
-          "required": "true"
-        },
-        "pointIf": {
-          "type": "boolean",
-          "title": "圆点",
-          "desc": "轮播图下面是否有圆点",
-          "val": true
-        },
-        "loop": {
-          "type": "boolean",
-          "title": "是否轮播",
-          "desc": "是否开启轮播",
-          "val": true
-        }
-      }
-    },
-    "imgList": {
+    "bannerList": {
       "type": "array",
-      "title": "图片信息",
+      "title": "图片列表",
       "desc": "填写图片的各种信息",
       "val": "[]",
       "items": {
