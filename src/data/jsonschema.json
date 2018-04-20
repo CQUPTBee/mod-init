@@ -17,7 +17,8 @@
             "title": "图片网址",
             "desc": "轮播显示的图片的地址链接",
             "val": "",
-            "required": "true"
+            "required": "true",
+            "format": "img"
           },
           "href": {
             "type": "string",
